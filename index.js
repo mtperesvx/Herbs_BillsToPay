@@ -4,7 +4,6 @@ const addBill = require('./src/domain/usecases/add_bill')
 const deleteBill = require('./src/domain/usecases/delete_bill')
 const payTheBill = require('./src/domain/usecases/pay_the_bill')
 
-
 const dueDate = new Date
 
 const rent = new Bill()
@@ -64,4 +63,6 @@ const payInjection = {
 // console.log(User2)
 //addBill(addInjection).run()
 //deleteBill(deleteInjection).run()
+addBill(injection).run()
+
 payTheBill(payInjection).run()
